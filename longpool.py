@@ -15,7 +15,6 @@ def send_msg(q):
     time.sleep(1)
     data = {'access_token': access_token, 'v': '5.78', 'peer_id': -167143798, 'message': 'test'}
     ans = req.post(API_ROOT+'messages.send', data=data)
-    print(ans.content)
     t_send = time.time()
 
 
